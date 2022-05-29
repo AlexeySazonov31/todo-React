@@ -12,6 +12,7 @@ body {
   justify-content: center;
   padding-top: 50px;
   font-family: Medium;
+  padding: 5%;
 }
 
 .parent{
@@ -21,6 +22,8 @@ body {
   border-radius: 10px;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
   background-color: rgb(235, 225, 163);
+
+  transition: height 0.5s cubic-bezier(.1, .9, .9, 1.0);
 }
 
 h3{
@@ -40,7 +43,7 @@ li {
   padding-top: 8px;
   display: flex;
   justify-content: space-between;
-  border: 2px solid rgba(0, 0, 0, 0.473);
+  border-bottom: 2px solid rgb(0, 0, 0);
   padding-left: 15px;
   list-style-type: none;
   margin: 4px;
@@ -55,6 +58,15 @@ select {
   border-radius: 5px;
   border: 2px solid rgb(39, 39, 39);
   background-color: rgb(255, 248, 211);
+  transition: all 0.2s;
+}
+select:hover{
+  background-color: rgb(253, 249, 223);
+  transition: all 0.2s;
+}
+select:focus{
+  background-color: rgb(253, 249, 223);
+  transition: all 0.2s;
 }
 
 input{
@@ -62,6 +74,15 @@ input{
   padding: 7px;
   background-color: rgb(255, 248, 211);
   border-radius: 5px;
+  transition: all 0.2s;
+}
+input:hover{
+  background-color: rgb(253, 249, 223);
+  transition: all 0.2s;
+}
+input:focus{
+  background-color: rgb(253, 249, 223);
+  transition: all 0.2s;
 }
 
 .add{
@@ -72,10 +93,12 @@ input{
   border-radius: 5px;
   background-color: rgb(99, 126, 86);
   color: rgb(255, 255, 255);
+  transition: all 0.2s;
 }
 
 .add:hover {
   background-color: rgb(90, 116, 79);
+  transition: all 0.2s;
 }
 
 .addDisabled{
@@ -99,10 +122,20 @@ input{
 
 .blockButton{
   background-color: rgb(99, 126, 86);
+  transition: all 0.2s;
+}
+.blockButton:hover {
+  background-color: rgb(77, 99, 68);
+  transition: all 0.2s;
 }
 
 .blockButtonRed {
   background-color: rgb(129, 38, 38);
+  transition: all 0.2s;
+}
+.blockButtonRed:hover {
+  background-color: rgb(94, 23, 23);
+  transition: all 0.2s;
 }
 
 .blockInp{

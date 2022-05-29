@@ -53,14 +53,16 @@ function TodoList(){
         setDeleteElement(deleteElement.filter(note => note.id !== id));
     }
 
-    let element;
+    let element,st;
     if( value === '1' ){
         element = <Lis notes={notes} deleteNote={deleteNote} toggleDone={toggleDone}/>
+        st = {height: 140 + (50 * notes.length)};
     } else if( value === '2' ){
         element = <LisDelete notes={deleteElement} deleteElem={setDeleteElement} returnActive={returnActive} />
+        st = {height: 140 + (50 * deleteElement.length)};
     } 
 
-    return <div className='parent'>
+    return <div className='parent' style={st} >
         <h3>Todo List</h3>
         <div className='blockInp'>
           <div className='input'>
