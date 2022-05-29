@@ -1,20 +1,28 @@
+@font-face {
+  font-family: Courgette;
+  src: url('./Courgette/Courgette-Regular.ttf');
+}
+@font-face {
+  font-family: Medium;
+  src: url('./Courgette/Montserrat-Medium.ttf');
+}
+
 body {
   display: flex;
   justify-content: center;
   padding-top: 50px;
+  font-family: Medium;
 }
+
 .parent{
   width: 500px;
-  border: 2px solid black;
+  border: 1px solid black;
   padding: 50px;
   border-radius: 10px;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
   background-color: rgb(235, 225, 163);
 }
-@font-face {
-  font-family: Courgette;
-  src: url('./Courgette/Courgette-Regular.ttf');
-}
+
 h3{
   margin: 0;
   text-align: center;
@@ -23,9 +31,11 @@ h3{
   margin-bottom: 20px;
   color: rgb(99, 126, 86);
 }
+
 ul {
   padding: 0;
 }
+
 li {
   padding-top: 8px;
   display: flex;
@@ -47,13 +57,13 @@ select {
   background-color: rgb(255, 248, 211);
 }
 
-
 input{
   width: 250px;
   padding: 7px;
   background-color: rgb(255, 248, 211);
   border-radius: 5px;
 }
+
 .add{
   margin-top: 8px;
   margin-left: 40px;
@@ -63,9 +73,11 @@ input{
   background-color: rgb(99, 126, 86);
   color: rgb(255, 255, 255);
 }
+
 .add:hover {
   background-color: rgb(90, 116, 79);
 }
+
 .addDisabled{
   margin-top: 8px;
   margin-left: 40px;
@@ -84,9 +96,11 @@ input{
   margin-bottom: 7px;
   margin-right: 7px;
 }
+
 .blockButton{
   background-color: rgb(99, 126, 86);
 }
+
 .blockButtonRed {
   background-color: rgb(129, 38, 38);
 }
@@ -99,10 +113,7 @@ input{
 .done{
   text-decoration: 2px line-through;
 }
-@font-face {
-  font-family: Medium;
-  src: url('./Courgette/Montserrat-Medium.ttf');
-}
+
 .textLi{
   margin-top: 4px;
   font-family: Medium;
