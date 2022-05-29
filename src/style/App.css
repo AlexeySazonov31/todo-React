@@ -1,0 +1,110 @@
+body {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.parent{
+  width: 500px;
+  border: 2px solid black;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+  background-color: rgb(235, 225, 163);
+}
+@font-face {
+  font-family: Courgette;
+  src: url('./Courgette/Courgette-Regular.ttf');
+}
+h3{
+  margin: 0;
+  text-align: center;
+  font-size: 35px;
+  font-family: Courgette;
+  margin-bottom: 20px;
+  color: rgb(99, 126, 86);
+}
+ul {
+  padding: 0;
+}
+li {
+  padding-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid rgba(0, 0, 0, 0.473);
+  padding-left: 15px;
+  list-style-type: none;
+  margin: 4px;
+  border-radius: 8px;
+}
+
+select {
+  width: 150px;
+  height: 34px;
+  margin-top: 18px;
+  padding-left: 8px;
+  border-radius: 5px;
+  border: 2px solid rgb(39, 39, 39);
+  background-color: rgb(255, 248, 211);
+}
+
+
+input{
+  width: 250px;
+  padding: 7px;
+  background-color: rgb(255, 248, 211);
+  border-radius: 5px;
+}
+.add{
+  margin-top: 8px;
+  margin-left: 40px;
+  width: 180px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(99, 126, 86);
+  color: rgb(255, 255, 255);
+}
+.add:hover {
+  background-color: rgb(90, 116, 79);
+}
+.addDisabled{
+  margin-top: 8px;
+  margin-left: 40px;
+  width: 180px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(99, 126, 86);
+  color: rgb(99, 126, 86);
+}
+
+.blockButton, .blockButtonRed{
+  margin: 0;
+  padding: 5px;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 7px;
+  margin-right: 7px;
+}
+.blockButton{
+  background-color: rgb(99, 126, 86);
+}
+.blockButtonRed {
+  background-color: rgb(129, 38, 38);
+}
+
+.blockInp{
+  display: flex;
+  justify-content: space-between;
+}
+
+.done{
+  text-decoration: 2px line-through;
+}
+@font-face {
+  font-family: Medium;
+  src: url('./Courgette/Montserrat-Medium.ttf');
+}
+.textLi{
+  margin-top: 4px;
+  font-family: Medium;
+  font-size: 18px;
+}
